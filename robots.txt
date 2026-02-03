@@ -21,7 +21,7 @@ Allow: /doctors/
 Allow: /blog/
 Allow: /css/
 Allow: /js/
-Allow: /images/
+Allow: /assets/
 
 # Crawl-delay (optional - be gentle on server)
 Crawl-delay: 1
