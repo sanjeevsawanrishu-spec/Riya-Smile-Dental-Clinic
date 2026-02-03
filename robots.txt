@@ -1,0 +1,45 @@
+# Robots.txt for Riya Smile Care Centre
+# https://riyasmile.in
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://riyasmile.in/sitemap.xml
+
+# Disallow admin and private directories (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow search engines to index all public content
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /services/
+Allow: /doctors/
+Allow: /blog/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Crawl-delay (optional - be gentle on server)
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
