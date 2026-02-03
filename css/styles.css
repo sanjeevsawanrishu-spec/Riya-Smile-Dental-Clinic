@@ -1860,3 +1860,106 @@ textarea.form-control {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ===== Section Wrapper ===== */
+.before-after-wrapper {
+  padding: 60px 20px;
+  background: #f9fafb;
+}
+
+/* ===== Grid Layout ===== */
+.before-after-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== Group Card ===== */
+.before-after-group {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.before-after-group:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Image Card ===== */
+.image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom on Hover */
+.image-card:hover img {
+  transform: scale(1.06);
+}
+
+/* ===== Labels ===== */
+.label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 20px;
+  color: #fff;
+  z-index: 2;
+}
+
+.label.before {
+  background: #ef4444;
+}
+
+.label.after {
+  background: #22c55e;
+}
+
+@media (max-width: 600px) {
+  .before-after-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .before-after-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .image-card {
+    width: 48%;
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .label{
+    padding: 3px 6px;
+    top: 5px;
+    left:5px;
+  }
+}
