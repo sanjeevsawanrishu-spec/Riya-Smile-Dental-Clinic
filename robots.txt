@@ -1,4 +1,22 @@
+# robots.txt for Riya Smile Care Centre
+# https://www.riyasmile.in
+
 User-agent: *
 Allow: /
 
+# Block private/admin areas only
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap
 Sitemap: https://www.riyasmile.in/sitemap.xml
+
+# Optional bad bot blocks
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
